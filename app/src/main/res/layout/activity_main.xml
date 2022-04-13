@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/apptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24sp"
+
+        android:fontFamily="@font/architects_daughter"
+
+        android:text="GRADE GENERATOR"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:text="COURSE"
+        android:textSize="18sp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/apptitle"/>
+
+    <TextView
+        android:id="@+id/txtMarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MARKS"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toStartOf="@id/txtGrade"
+        app:layout_constraintStart_toEndOf="@id/txtCourse"
+        app:layout_constraintTop_toTopOf="@id/txtCourse"/>
+
+    <TextView
+        android:id="@+id/txtGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GRADE"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toEndOf="@id/txtMarks"
+        app:layout_constraintTop_toTopOf="@id/txtMarks"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/linebreaker"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:background="@drawable/line"
+        app:layout_constraintEnd_toEndOf="@+id/txtGrade"
+        app:layout_constraintStart_toStartOf="@+id/txtCourse"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarks" />
+
+
+
+    <TextView
+        android:id="@+id/txtApt3060"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APT 3060"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linebreaker"/>
+
+    <EditText
+        android:id="@+id/edtAPT3060"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintEnd_toStartOf="@id/txtApt3060Grade"
+        android:inputType="number"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/inputstyle"
+        app:layout_constraintStart_toEndOf="@id/txtApt3060"
+        app:layout_constraintTop_toBottomOf="@id/linebreaker"
+
+        />
+
+    <TextView
+        android:id="@+id/txtApt3060Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toEndOf="@id/edtAPT3060"
+        app:layout_constraintTop_toBottomOf="@id/linebreaker"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/txtApt2055"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APT 2055"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtAPT3060"/>
+
+    <EditText
+        android:id="@+id/edtAPT2055"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintEnd_toStartOf="@id/txtApt3060Grade"
+        android:inputType="number"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/inputstyle"
+        app:layout_constraintStart_toEndOf="@id/txtApt2055"
+        app:layout_constraintTop_toBottomOf="@id/edtAPT3060"
+
+        />
+
+    <TextView
+        android:id="@+id/txtApt20555Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toEndOf="@id/edtAPT2055"
+        app:layout_constraintTop_toBottomOf="@id/txtApt3060Grade"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/txtIst2045"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IST  2045"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtAPT2055"/>
+
+    <EditText
+        android:id="@+id/edtIST2045"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintEnd_toStartOf="@id/txtIST2045Grade"
+        android:inputType="number"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/inputstyle"
+        app:layout_constraintStart_toEndOf="@id/txtIst2045"
+        app:layout_constraintTop_toBottomOf="@id/edtAPT2055"
+
+        />
+
+    <TextView
+        android:id="@+id/txtIST2045Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toEndOf="@id/edtIST2045"
+        app:layout_constraintTop_toBottomOf="@id/txtApt20555Grade"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/txtBus1010"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUS 1010"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtIST2045"/>
+
+    <EditText
+        android:id="@+id/edtBus1010"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintEnd_toStartOf="@id/txtIST2045Grade"
+        android:inputType="number"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/inputstyle"
+        app:layout_constraintStart_toEndOf="@id/txtBus1010"
+        app:layout_constraintTop_toBottomOf="@id/edtIST2045"
+
+        />
+
+    <TextView
+        android:id="@+id/txtBus1010Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toEndOf="@id/edtBus1010"
+        app:layout_constraintTop_toBottomOf="@id/txtIST2045Grade"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <TextView
+        android:id="@+id/txtAPT1030"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APT 1030"
+        android:fontFamily="sans-serif-black"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtBus1010"/>
+
+    <EditText
+        android:id="@+id/edtAPT1030"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        app:layout_constraintEnd_toStartOf="@id/txtIST2045Grade"
+        android:inputType="number"
+        android:gravity="center"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/inputstyle"
+        app:layout_constraintStart_toEndOf="@id/txtAPT1030"
+        app:layout_constraintTop_toBottomOf="@id/edtBus1010"
+
+        />
+
+    <TextView
+        android:id="@+id/txtAPT1030Grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textSize="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toEndOf="@id/edtAPT1030"
+        app:layout_constraintTop_toBottomOf="@id/txtBus1010Grade"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <TextView
+        android:id="@+id/linebreaker2"
+        android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintTop_toBottomOf="@id/edtAPT1030" />
+
+
+    <Button
+        android:id="@+id/generateBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Grade"
+        android:background="@drawable/button_style"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintTop_toBottomOf="@id/linebreaker2"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
